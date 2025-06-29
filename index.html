@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>My LaTeX Page</title>
+
+  <!-- Load MathJax for LaTeX rendering -->
+  <script src="https://polyfill.io/v3/polyfill.min.js?features=es6"></script>
+  <script>
+    window.MathJax = {
+      tex: {
+        inlineMath: [['$', '$'], ['\\(', '\\)']],
+        displayMath: [['$$', '$$'], ['\\[', '\\]']]
+      }
+    };
+  </script>
+  <script id="MathJax-script" async
+          src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js">
+  </script>
+</head>
+
+<body>
+  <h1>Hello from GitHub Pages!</h1>
+
+  <p>This is an inline equation: $E = mc^2$.</p>
+
+  <p>This is a block equation:</p>
+  $$
+  \nabla \cdot \vec{E} = \frac{\rho}{\varepsilon_0}
+  $$
+
+  <p>Edit this file to add more LaTeX!</p>
+</body>
+</html>
